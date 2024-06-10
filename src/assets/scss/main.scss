@@ -1,6 +1,8 @@
 /******
 index SASS
 ******/
+// Import all of Bootstrap's CSS
+@use "bootstrap/scss/bootstrap";
 
 @use "./partials/reset" as *;
 @use "./partials/variables" as *;

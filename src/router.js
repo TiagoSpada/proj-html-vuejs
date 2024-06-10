@@ -17,7 +17,7 @@ const router = createRouter({
 			component: AppAbout,
 		},
 		{
-			path: "/constact-us",
+			path: "/contact-us",
 			name: "contact",
 			component: AppContact,
 		},
