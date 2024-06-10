@@ -4,4 +4,6 @@ import "./assets/scss/main.scss";
 //  import vue component
 import App from "./App.vue";
 
-createApp(App).mount("#app");
+import { router } from "./router.js";
+
+createApp(App).use(router).mount("#app");

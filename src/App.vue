@@ -1,5 +1,10 @@
 <script></script>
 
-<template><h1>Vue Vitte Template (scss)</h1></template>
+<template>
+	<header>
+		<div>intestazione comune (header)</div>
+	</header>
+	<router-view></router-view>
+</template>
 
 <style></style>
