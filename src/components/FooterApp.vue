@@ -1,8 +1,35 @@
 <script>
+import RecipeElement from "./footer_components/RecipeListElement.vue";
 export default {
 	name: "FooterrApp",
+	components: {
+		RecipeElement,
+	},
 	data() {
-		return {};
+		return {
+			recipesFooter: [
+				{
+					text: "Fruit Platter with Banana, Mango, Berries and Orange",
+					ImgUrl:
+						"https://avada.website/food/wp-content/uploads/sites/118/2019/03/Mixed-fruits.jpg",
+				},
+				{
+					text: "Breakfast Delight With Strawberry, Egg And Fruit",
+					ImgUrl:
+						"https://avada.website/food/wp-content/uploads/sites/118/2019/03/r-rachel-park-366508-unsplash-min.jpg",
+				},
+				{
+					text: "Ice Cream Heaven With Vanilla, Chocolate And Pistachio",
+					ImgUrl:
+						"https://avada.website/food/wp-content/uploads/sites/118/2019/03/r-michelle-tsang-500721-unsplash-min.jpg",
+				},
+				{
+					text: "Video Recipe: How to Make a Cool Summer Drink",
+					ImgUrl:
+						"https://avada.website/food/wp-content/uploads/sites/118/2019/09/quick-summer-drink.jpg",
+				},
+			],
+		};
 	},
 };
 </script>
@@ -11,9 +38,12 @@ export default {
 		<div class="h-footer">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-6 col-lg-3" v-for="n in 4">
-						<div class="content">img {{ n }}</div>
-					</div>
+					<RecipeElement
+						class="col-12 col-sm-6 col-lg-3"
+						v-for="recipe in recipesFooter"
+						:recipe="recipe"
+					>
+					</RecipeElement>
 				</div>
 			</div>
 		</div>
@@ -35,14 +65,12 @@ export default {
 	</footer>
 </template>
 <style scoped lang="scss">
+.active {
+	display: block;
+}
 .h-footer {
 	.row > * {
 		padding: 0;
-	}
-	.content {
-		height: 310px;
-		background-color: lightblue;
-		outline: 1px solid black;
 	}
 }
 

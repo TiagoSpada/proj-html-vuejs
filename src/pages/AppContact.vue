@@ -11,7 +11,6 @@ export default {
 
 <template>
 	<main>
-		<h1>Pagina Contatti</h1>
 		<div class="container-fluid img-background">
 			<div class="d-flex">
 				<div class="content">Contact Us</div>
@@ -42,6 +41,17 @@ export default {
 				</div>
 			</div>
 		</div>
+		<div class="map">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3026.854573624512!2d-73.946785!3d40.655136!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b6617a81121%3A0x9d5cc54407bdb5fa!2s775%20New%20York%20Ave%2C%20Brooklyn%2C%20NY%2011203!5e0!3m2!1sen!2sus!4v1718106532628!5m2!1sen!2sus"
+				width="100%"
+				height="100%"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+				referrerpolicy="no-referrer-when-downgrade"
+			></iframe>
+		</div>
 	</main>
 	<!-- <FooterApp /> -->
 </template>
@@ -62,11 +72,13 @@ export default {
 }
 
 .contact {
+	padding-bottom: 150px;
 	.container-lg {
 		max-width: 1248px;
 		.contact-info {
 			position: relative;
 			top: -75px;
+			padding: 0 20px;
 			.content {
 				background-color: lightsalmon;
 				height: 800px;
@@ -90,6 +102,7 @@ export default {
 			}
 		}
 		.contact-input {
+			padding: 0 20px;
 			.content {
 				background-color: lightskyblue;
 				padding-top: 60px;
@@ -97,5 +110,11 @@ export default {
 			}
 		}
 	}
+}
+
+.map {
+	margin-bottom: 15px;
+	width: 100vw;
+	height: 500px;
 }
 </style>
