@@ -6,13 +6,31 @@ export default {
 
 <template>
 <h1>Pagina home</h1>
-// JUMBOTRON
+<!-- JUMBOTRON -->
 <div class="jumbotron">
-	<div class="container-fluid jumbo-img h-200 p-top p-bottom">
+	<div class="container-fluid jumbo-img h-200 p-top">
 		<div class="head-jumbo container-xl d-flex justify-content-center border h-20 p-20">
 		<div class="col-8 d-flex justify-content-center border">Food Corner: Top Japanese Restaurants for Sushi</div>
 		</div>
 	</div>
+</div>
+
+<!-- SUB JUMBOTRON-->
+<div class="sub-jumbo">
+	<div class="container-xl text-center border sub-jumbo-pos bg-danger-subtle pb-5">
+		<h5 class="p-3">FOODIE JOURNAL</h5>
+    <div class="row g-3">
+      <div class="col-4">
+        <div class="p-3 sub-jumbo-img text-white">Colonna 1</div>
+      </div>
+      <div class="col-4">
+        <div class="p-3 sub-jumbo-img text-white">Colonna 2</div>
+      </div>
+      <div class="col-4">
+        <div class="p-3 sub-jumbo-img text-white">Colonna 3</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 </template>
@@ -23,7 +41,7 @@ export default {
 .jumbotron{
 	.jumbo-img{
 		background-color: cadetblue;
-		background-size: cover; /* Adatta l'immagine per coprire interamente il container */
+		background-size: cover;
 	}
 
 	.h-200{
@@ -39,6 +57,18 @@ export default {
 
 	.p-20{
 		padding: 20px 20px;
+	}
+}
+
+.sub-jumbo{
+	.sub-jumbo-img{
+		background-color: chocolate;
+		background-size: cover;
+	}
+
+	.sub-jumbo-pos{
+		position: relative;
+		top: -60px;
 	}
 }
 
