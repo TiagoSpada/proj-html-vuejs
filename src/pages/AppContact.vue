@@ -13,7 +13,13 @@ export default {
 	<main>
 		<div class="container-fluid img-background">
 			<div class="d-flex">
-				<div class="content">Contact Us</div>
+				<div class="content">
+					<h2>Contact Us</h2>
+					<p>
+						Nunc rutrum a nibh id ornare. Vivamus eleifend ultricies elit quis
+						imperdiet.
+					</p>
+				</div>
 			</div>
 		</div>
 		<div class="contact">
@@ -65,8 +71,16 @@ export default {
 	.d-flex {
 		height: 100%;
 		.content {
+			text-align: center;
 			color: white;
 			margin: auto;
+			h2 {
+				font-size: 42px;
+				line-height: 1.4;
+			}
+			p {
+				font-size: 16px;
+			}
 		}
 	}
 }
@@ -113,7 +127,7 @@ export default {
 }
 
 .map {
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	width: 100vw;
 	height: 500px;
 }

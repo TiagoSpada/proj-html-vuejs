@@ -25,6 +25,8 @@ export default {
 .content {
 	height: 310px;
 	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	cursor: pointer;
 	.text-image {
 		display: flex;

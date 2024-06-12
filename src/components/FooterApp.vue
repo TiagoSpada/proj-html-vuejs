@@ -50,24 +50,70 @@ export default {
 		<div class="footer-info">
 			<div class="container">
 				<div class="row">
-					<div class="col-3"><div class="content">logo</div></div>
-					<div class="col-3"><div class="content">info</div></div>
-					<div class="col-3"><div class="content">contatti</div></div>
-					<div class="col-3"><div class="content">app</div></div>
+					<div class="col-3">
+						<div class="content">
+							<img
+								src="https://avada.website/food/wp-content/uploads/sites/118/2019/08/avada-food-logo-mob-2x.png"
+								alt="AVADA FOOD"
+								class="img-logo"
+							/>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="content">
+							<nav>
+								<ul class="row flex-column">
+									<li class="col"><div>Recipes</div></li>
+									<li class="col"><div>Places</div></li>
+									<li class="col"><div>Blog</div></li>
+									<li class="col"><div>About</div></li>
+									<li class="col"><div>Contact</div></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="content contact">
+							<h4>CONTACT US</h4>
+							<ul class="ps-0">
+								<li><div>12345 Avada Main Street, New York, NY 555555</div></li>
+								<li><div>&plus;0100-505-0000</div></li>
+								<li><div>info@avada-domain.com</div></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="content app">
+							<h4>GET OUR APP</h4>
+							<div>
+								<img
+									src="https://avada.website/food/wp-content/uploads/sites/118/2019/09/download-android-200x66.png"
+									alt="Google Play"
+								/>
+							</div>
+							<div>
+								<img
+									src="https://avada.website/food/wp-content/uploads/sites/118/2019/09/download-app-store-200x66.png"
+									alt=""
+								/>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="end-footer">
 			<div class="container">
-				<div class="content">&copy; Copyright</div>
+				<div class="content">
+					&copy; Copyright 2012 - 2019 | <a href="">Avada Website Builder</a> by
+					<a href="">ThemeFusion</a> | All Rights Reserved | Powered by
+					<a href="">WordPress</a>
+				</div>
 			</div>
 		</div>
 	</footer>
 </template>
 <style scoped lang="scss">
-.active {
-	display: block;
-}
 .h-footer {
 	.row > * {
 		padding: 0;
@@ -79,21 +125,72 @@ export default {
 	.container {
 		max-width: 1248px;
 		.row > * {
-			padding: 0;
+			padding: auto0;
 		}
 		.content {
-			height: 245px;
-			background-color: lightcoral;
-			outline: 1px solid black;
+			color: #6b6963;
+			.img-logo {
+				margin: 10px 0;
+				max-width: 192px;
+			}
+			nav {
+				ul {
+					font-size: 16px;
+					padding-left: 0;
+					li {
+						div {
+							margin-bottom: 16px;
+						}
+						div:hover {
+							cursor: pointer;
+							color: #fc7523;
+							border-right: 2px solid #fc7523;
+						}
+					}
+				}
+			}
+			h4 {
+				color: #fc7523;
+				letter-spacing: 2px;
+			}
+		}
+		.contact {
+			li {
+				div {
+					font-size: 17px;
+					padding: 16px 0;
+					border-bottom: 1px solid #f5f5f1;
+				}
+			}
+		}
+		.app {
+			h4 {
+				margin-bottom: 24px;
+			}
+			div {
+				margin: 16px 0;
+				img {
+					cursor: pointer;
+				}
+			}
 		}
 	}
 }
 
 .end-footer {
-	background-color: lightcyan;
+	background-color: #f5f6f1;
 	.content {
 		text-align: center;
 		padding: 30px;
+		font-size: 13px;
+		color: #858695;
+		a {
+			text-decoration: none;
+			color: #858695;
+		}
+		a:hover {
+			color: #fc7523;
+		}
 	}
 }
 </style>
