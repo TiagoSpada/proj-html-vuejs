@@ -122,6 +122,45 @@ export default {
 	</div>
 </div>
 
+<!-- FARM SECTION -->
+<div class="farm">
+	<div class="container content-wrapper">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Farm to Table</h2>
+      <p>Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lacinia lobortis.</p>
+      <div class="card mb-3">
+        <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/single-post-img3.jpg" class="card-img-top" alt="Sushi">
+        <div class="card-body">
+          <h5 class="card-title">Food Corner: Top Japanese Restaurants for Sushi</h5>
+          <p class="card-text">Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin.</p>
+          <a href="#" class="btn btn-primary">Read more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="d-flex flex-column">
+        <a href="#" class="btn btn-warning blog-btn">Read Our Blog</a>
+        <div class="card recipe-card mt-4">
+          <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/ad-bg.jpg" class="card-img" alt="Recipes">
+          <div class="card-img-overlay">
+            <h5 class="card-title">View Our Latest Recipes</h5>
+          </div>
+        </div>
+		<div class="card city-guide-card mt-4">
+          <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/02/singapore-featured-image.jpg" class="card-img" alt="Singapore Image">
+          <div class="city-guide-overlay">
+            <h5 class="card-title">City Guide: Singapore</h5>
+          </div>
+        </div>
+		<a href="#" class="city-guide-btn">VIEW ALL CITY GUIDES</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
 </template>
 
 <style scoped lang="scss">
@@ -179,6 +218,7 @@ export default {
     }
 }
 
+//COLLECTION
 .collection{
 	.b-custom{
 		border: 1px solid black;
@@ -187,6 +227,56 @@ export default {
 	.custom-col{
 		width: calc(100% / 4 - 32px);
 	}
+}
+
+//FARM 
+.farm{
+	.content-wrapper {
+      padding: 30px;
+    }
+    .blog-btn {
+      margin-top: 23px;
+    }
+    .recipe-card {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .recipe-card img {
+      width: 100%;
+	  height: 450px;
+    }
+    .recipe-card .card-img-overlay {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+	.city-guide-card {
+      position: relative;
+    }
+    .city-guide-card img {
+      width: 100%;
+    }
+    .city-guide-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    .city-guide-btn {
+      width: 100%;
+      text-align: center;
+      background-color: #FF6600;
+      color: white;
+      padding: 10px 0;
+      text-decoration: none;
+      display: block;
+    }
 }
 
 </style>
