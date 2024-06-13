@@ -1,61 +1,23 @@
 <script>
 import FooterApp from "../components/FooterApp.vue";
 import JumboComponent from "../components/home_components/JumboComponent.vue";
+import SubJumboComponent from "../components/home_components/SubJumboComponent.vue";
 
 export default {
 	name: "home",
 	components: {
 		FooterApp,
-    JumboComponent
+    JumboComponent,
+    SubJumboComponent
 	},
 };
 </script>
 
 <template>
 
-<!-- SUB JUMBOTRON-->
- <JumboComponent/>
-<div class="sub-jumbo">
-	<div class="container-xl text-center  sub-jumbo-pos bg-body pb-5">
-		<h5 class="p-3">FOODIE JOURNAL</h5>
-    <div class="row">
-    <div class="col-md-4 article-card">
-      <div class="card">
-        <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/single-post-img3.jpg" class="card-img-top" alt="Food Corner">
-        <div class="card-body">
-          <h5 class="card-title">Food Corner: Top Japanese Restaurants for Sushi</h5>
-          <p class="card-text">
-            <small class="text-muted">admin | March 25th, 2019</small>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 article-card">
-      <div class="card">
-        <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/fi-roundup.jpg" class="card-img-top" alt="Roundup">
-        <div class="card-body">
-          <h5 class="card-title">Roundup: My New Favourite Recipes For Healthy Living</h5>
-          <p class="card-text">
-            <small class="text-muted">admin | March 25th, 2019</small>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4 article-card">
-      <div class="card">
-        <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/fi-korean-food.jpg" class="card-img-top" alt="Meal Prep">
-        <div class="card-body">
-          <h5 class="card-title">Meal Prep: Korean Bibimbap with Kimchi</h5>
-          <p class="card-text">
-            <small class="text-muted">admin | March 25th, 2019</small>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
 
+ <JumboComponent/>
+ <SubJumboComponent/>
 <!-- RECIPES -->
 <div class="recipes">
 	<div class="container-xl mt-4 pb-4">
@@ -303,22 +265,7 @@ export default {
 <style scoped lang="scss">
 
 
-//CSS SUB JUMBO
-.sub-jumbo{
-	.sub-jumbo-img{
-		background-color: chocolate;
-		background-size: cover;
-	}
 
-	.sub-jumbo-pos{
-		position: relative;
-		top: -60px;
-	}
-
-  .card {
-      border: none; /* Remove borders from cards */
-    }
-}
 //RECEPIS
 .recipes{
 
