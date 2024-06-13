@@ -10,3 +10,8 @@ index SASS
 @use "./partials/utils" as *;
 @use "./partials/typography" as *;
 @use "./partials/common" as *;
+
+body {
+	background-color: $bg-color-body;
+	font-family: "Catamaran";
+}
