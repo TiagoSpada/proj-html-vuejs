@@ -16,9 +16,12 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-
+import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 /* add icons to the library */
-library.add([faPhoneFlip, faClock, faEnvelope]);
+library.add([faPhoneFlip, faClock, faEnvelope, faFacebookF, faInstagram, faXTwitter, faYoutube]);
 
 createApp(App)
 	.use(router)

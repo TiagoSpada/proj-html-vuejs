@@ -12,10 +12,15 @@ export default {
 <template>
 <!-- JUMBOTRON -->
 <div class="jumbotron">
-	<div class="container-fluid jumbo-img h-200 p-top">
-		<div class="head-jumbo container-xl d-flex justify-content-center border h-20 p-20">
-		<div class="col-8 d-flex justify-content-center border">Food Corner: Top Japanese Restaurants for Sushi</div>
-		</div>
+	<div class="container-fluid jumbo-img p-top">
+		<div class="featured-article">
+    <img src="" alt="Featured Image">
+    <div class="overlay">
+      <div class="badge">TODAY'S PICKS</div>
+      <h2>Food Corner: Top Japanese Restaurants for Sushi</h2>
+      <p>March 25, 2019</p>
+    </div>
+  </div>
 	</div>
 </div>
 
@@ -213,6 +218,12 @@ export default {
         <hr>
         <div class="mt-4">
           <input class="form-control" type="text" placeholder="Search">
+          <div class="social-links my-3">
+            <a href="#"><font-awesome-icon icon="fa-brands fa-facebook-f" /></a>
+            <a href="#"><font-awesome-icon icon="fa-brands fa-instagram" /></a>
+            <a href="#"><font-awesome-icon icon="fa-brands fa-x-twitter" /></a>
+            <a href="#"><font-awesome-icon icon="fa-brands fa-youtube" /></a>
+          </div>
           </div>
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
@@ -279,10 +290,10 @@ export default {
 
 //CSS JUMBOTRON
 .jumbotron{
-	.jumbo-img{
-		background-color: cadetblue;
-		background-size: cover;
-	}
+   background-image: url('https://avada.website/food/wp-content/uploads/sites/118/2019/02/slide1-bg.jpg');
+   background-size: cover;
+   background-position: center;
+   padding:175px 0;
 
 	.h-200{
 		height: 500px;
@@ -298,6 +309,37 @@ export default {
 	.p-20{
 		padding: 20px 20px;
 	}
+
+  .featured-article {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+    .featured-article img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .featured-article .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      color: #333;
+    }
+    .badge {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #FF6600;
+      color: white;
+      padding: 5px 10px;
+      font-size: 0.9rem;
+    }
 }
 
 //CSS SUB JUMBO
