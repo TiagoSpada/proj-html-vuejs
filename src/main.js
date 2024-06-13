@@ -9,6 +9,12 @@ import { router } from "./router.js";
 /* import the fontawesome core */
 import { library } from "@fortawesome/fontawesome-svg-core";
 
+/* import font catamaran*/
+import "@fontsource/catamaran"; // Defaults to weight 400
+
+/* import font vidaloka*/
+import "@fontsource/vidaloka"; // Defaults to weight 400
+
 /* import font awesome icon component */
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
