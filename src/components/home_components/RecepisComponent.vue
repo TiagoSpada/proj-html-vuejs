@@ -1,6 +1,44 @@
 <script>
+import RecepisList from './RecepisComonent/RecepisList.vue';
 export default {
-	name: "RecepisComponent",
+	name: "RecipComponent",
+    components: {RecepisList},
+
+    data() {
+		return {
+			recipelsit: [
+				{
+					text: "Fruit Platter with Banana, Mango, Berries and Orange",
+					ImgUrl:
+						"https://avada.website/food/wp-content/uploads/sites/118/2019/03/Mixed-fruits.jpg",
+				},
+				{
+					text: "Breakfast Delight With Strawberry, Egg And Fruit",
+					ImgUrl:
+						"https://avada.website/food/wp-content/uploads/sites/118/2019/03/r-rachel-park-366508-unsplash-min.jpg",
+				},
+				{
+					text: "Ice Cream Heaven With Vanilla, Chocolate And Pistachio",
+					ImgUrl:
+						"https://avada.website/food/wp-content/uploads/sites/118/2019/03/r-michelle-tsang-500721-unsplash-min.jpg",
+				},
+				{
+					text: "Video Recipe: How to Make a Cool Summer Drink",
+					ImgUrl:
+						"https://avada.website/food/wp-content/uploads/sites/118/2019/09/quick-summer-drink.jpg",
+				},
+                {
+                text: "Ketogenic Diet Recipe with Avocado",
+                ImgUrl:
+                "https://avada.website/food/wp-content/uploads/sites/118/2019/03/r-maarten-van-den-heuvel-400626-unsplash-min.jpg",
+                },
+                {
+                    text: "Video Recipe: The Perfect Cosmopolitan",
+                    ImgUrl:"https://avada.website/food/wp-content/uploads/sites/118/2019/09/perfect-cosmopolitan.jpg",
+                }
+			],
+		};
+	},
 };
 </script>
 
@@ -27,24 +65,12 @@ export default {
       </div>
       <div class="col-5">
         <div class="row h-100">
-          <div class="col-6 mb-3">
-            <div class="ricetta1 h-100"></div>
-          </div>
-          <div class="col-6 mb-3">
-            <div class="ricetta2 h-100"></div>
-          </div>
-          <div class="col-6 mb-3">
-            <div class="ricetta3 h-100"></div>
-          </div>
-          <div class="col-6 mb-3">
-            <div class="ricetta4 h-100"></div>
-          </div>
-          <div class="col-6">
-            <div class="ricetta5 h-100"></div>
-          </div>
-          <div class="col-6">
-            <div class="ricetta6 h-100"></div>
-          </div>
+					<RecipeList
+						class="col-6 mb-3 h-100"
+						v-for="recipe in recipelsit"
+						:recipe="recipe"
+					
+					</RecipeList>
         </div>
       </div>
     </div>
