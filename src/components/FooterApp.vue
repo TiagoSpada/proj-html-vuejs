@@ -62,7 +62,7 @@ export default {
 					<div class="col-3">
 						<div class="content">
 							<nav>
-								<ul class="row flex-column">
+								<ul class="row flex-column justify-between">
 									<li class="col"><div>Recipes</div></li>
 									<li class="col"><div>Places</div></li>
 									<li class="col"><div>Blog</div></li>
@@ -129,12 +129,16 @@ export default {
 		}
 		.content {
 			color: #6b6963;
+			height: 100%;
 			.img-logo {
 				margin: 10px 0;
 				max-width: 192px;
 			}
 			nav {
+				height: 100%;
 				ul {
+					height: 100%;
+					justify-content: space-between;
 					font-size: 16px;
 					padding-left: 0;
 					li {

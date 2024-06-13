@@ -1,10 +1,11 @@
 <script>
 import FooterApp from "../components/FooterApp.vue";
-
+import InfoOffice from "../components/contact_components/InfoOffice.vue";
 export default {
 	name: "contact",
 	components: {
 		FooterApp,
+		InfoOffice,
 	},
 };
 </script>
@@ -25,22 +26,7 @@ export default {
 		<div class="contact">
 			<div class="container-lg">
 				<div class="row justify-content-center">
-					<div class="col-12 col-lg-6 contact-info">
-						<div class="content">
-							<div class="row flex-column justify-content-between">
-								<div class="col info">
-									<div class="content-info">Main Office</div>
-								</div>
-								<div class="col info">
-									<div class="content-info">Quick Contact</div>
-								</div>
-								<div class="col info">
-									<div class="content-info">Office Hours</div>
-								</div>
-								<div class="col info"></div>
-							</div>
-						</div>
-					</div>
+					<InfoOffice />
 					<div class="col-12 col-lg-6 contact-input">
 						<div class="content"></div>
 					</div>
@@ -89,32 +75,7 @@ export default {
 	padding-bottom: 150px;
 	.container-lg {
 		max-width: 1248px;
-		.contact-info {
-			position: relative;
-			top: -75px;
-			padding: 0 20px;
-			.content {
-				background-color: lightsalmon;
-				height: 800px;
-				padding: 80px 60px;
-				.row {
-					.info {
-						background-color: #fff;
-						margin-top: 20px;
-						.content-info {
-							padding: 35px 20px;
-						}
-					}
-					.info:first-child {
-						margin-top: 0;
-					}
-					.info:last-child {
-						padding: 10px;
-						background-color: #fff;
-					}
-				}
-			}
-		}
+
 		.contact-input {
 			padding: 0 20px;
 			.content {
