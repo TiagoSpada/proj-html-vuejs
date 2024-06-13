@@ -3,6 +3,7 @@ import FooterApp from "../components/FooterApp.vue";
 import JumboComponent from "../components/home_components/JumboComponent.vue";
 import SubJumboComponent from "../components/home_components/SubJumboComponent.vue";
 import RecepisComponent from "../components/home_components/RecipeComponent.vue";
+import CollectionComponent from "../components/home_components/CollectionComponent.vue";
 
 export default {
 	name: "home",
@@ -11,6 +12,7 @@ export default {
 		JumboComponent,
 		SubJumboComponent,
 		RecepisComponent,
+		CollectionComponent,
 	},
 };
 </script>
@@ -19,73 +21,8 @@ export default {
 	<JumboComponent />
 	<SubJumboComponent />
 	<RecepisComponent />
+	<CollectionComponent />
 
-	<!-- COLLECTION -->
-	<div class="collection">
-		<div class="container-xl mt-4 pb-4">
-			<div class="col-12 text-center">CULINARY COLLECTION</div>
-			<div class="col-12">
-				<div class="row text-center">
-					<div class="custom-col b-custom m-3">
-						<img
-							src="https://avada.website/food/wp-content/uploads/sites/118/2019/08/premium-recipes.png"
-							alt="Appetisers"
-						/>
-						<div class="colletion-title">Appetisers</div>
-					</div>
-					<div class="custom-col b-custom m-3">
-						<img
-							src="https://avada.website/food/wp-content/uploads/sites/118/2019/08/baking-recipes.png"
-							alt="Bakery"
-						/>
-						<div class="colletion-title">Bakery</div>
-					</div>
-					<div class="custom-col b-custom m-3">
-						<img
-							src="https://avada.website/food/wp-content/uploads/sites/118/2019/08/dinner-recipes.png"
-							alt="Dinner"
-						/>
-						<div class="colletion-title">Dinner</div>
-					</div>
-					<div class="custom-col b-custom m-3">
-						<img
-							src="https://avada.website/food/wp-content/uploads/sites/118/2019/08/drinks-recipes.png"
-							alt="Drinks"
-						/>
-						<div class="colletion-title">Drinks</div>
-					</div>
-					<div class="custom-col b-custom m-3">
-						<img
-							src="https://avada.website/food/wp-content/uploads/sites/118/2019/08/healthy-recipes.png"
-							alt="Healthy"
-						/>
-						<div class="colletion-title">Healthy</div>
-					</div>
-					<div class="custom-col b-custom m-3">
-						<img
-							src="https://avada.website/food/wp-content/uploads/sites/118/2019/08/quick-easy-recipes.png"
-							alt="Quick & Easy"
-						/>
-						<div class="colletion-title">Quick & Easy</div>
-					</div>
-					<div class="custom-col b-custom m-3">
-						<img
-							src="https://avada.website/food/wp-content/uploads/sites/118/2019/08/soups-recipes.png"
-							alt="Soups"
-						/>
-						<div class="colletion-title">Soups</div>
-					</div>
-					<div class="custom-col b-custom m-3">
-						<img
-							src="https://avada.website/food/wp-content/uploads/sites/118/2019/08/staff-picks.png"
-							alt="Staff Picks"
-						/>
-						<div class="colletion-title">Staff Picks</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
 	<!-- FARM SECTION -->
 	<div class="farm">
@@ -358,17 +295,6 @@ export default {
 </template>
 
 <style scoped lang="scss">
-//COLLECTION
-.collection {
-	.b-custom {
-		border: 1px solid black;
-	}
-
-	.custom-col {
-		width: calc(100% / 4 - 32px);
-	}
-}
-
 //FARM
 .farm {
 	.content-wrapper {
