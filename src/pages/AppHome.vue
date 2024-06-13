@@ -1,45 +1,59 @@
 <script>
 import FooterApp from "../components/FooterApp.vue";
+import JumboComponent from "../components/home_components/JumboComponent.vue";
 
 export default {
 	name: "home",
 	components: {
 		FooterApp,
+    JumboComponent
 	},
 };
 </script>
 
 <template>
-<!-- JUMBOTRON -->
-<div class="jumbotron">
-	<div class="container-fluid jumbo-img p-top">
-		<div class="featured-article">
-    <img src="" alt="Featured Image">
-    <div class="overlay">
-      <div class="badge">TODAY'S PICKS</div>
-      <h2>Food Corner: Top Japanese Restaurants for Sushi</h2>
-      <p>March 25, 2019</p>
-    </div>
-  </div>
-	</div>
-</div>
 
 <!-- SUB JUMBOTRON-->
+ <JumboComponent/>
 <div class="sub-jumbo">
-	<div class="container-xl text-center border sub-jumbo-pos bg-danger-subtle pb-5">
+	<div class="container-xl text-center  sub-jumbo-pos bg-body pb-5">
 		<h5 class="p-3">FOODIE JOURNAL</h5>
-    <div class="row g-3">
-      <div class="col-4">
-        <div class="p-3 sub-jumbo-img text-white">Colonna 1</div>
+    <div class="row">
+    <div class="col-md-4 article-card">
+      <div class="card">
+        <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/single-post-img3.jpg" class="card-img-top" alt="Food Corner">
+        <div class="card-body">
+          <h5 class="card-title">Food Corner: Top Japanese Restaurants for Sushi</h5>
+          <p class="card-text">
+            <small class="text-muted">admin | March 25th, 2019</small>
+          </p>
+        </div>
       </div>
-      <div class="col-4">
-        <div class="p-3 sub-jumbo-img text-white">Colonna 2</div>
+    </div>
+    <div class="col-md-4 article-card">
+      <div class="card">
+        <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/fi-roundup.jpg" class="card-img-top" alt="Roundup">
+        <div class="card-body">
+          <h5 class="card-title">Roundup: My New Favourite Recipes For Healthy Living</h5>
+          <p class="card-text">
+            <small class="text-muted">admin | March 25th, 2019</small>
+          </p>
+        </div>
       </div>
-      <div class="col-4">
-        <div class="p-3 sub-jumbo-img text-white">Colonna 3</div>
+    </div>
+    <div class="col-md-4 article-card">
+      <div class="card">
+        <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/fi-korean-food.jpg" class="card-img-top" alt="Meal Prep">
+        <div class="card-body">
+          <h5 class="card-title">Meal Prep: Korean Bibimbap with Kimchi</h5>
+          <p class="card-text">
+            <small class="text-muted">admin | March 25th, 2019</small>
+          </p>
+        </div>
       </div>
     </div>
   </div>
+</div>
 </div>
 
 <!-- RECIPES -->
@@ -288,59 +302,6 @@ export default {
 
 <style scoped lang="scss">
 
-//CSS JUMBOTRON
-.jumbotron{
-   background-image: url('https://avada.website/food/wp-content/uploads/sites/118/2019/02/slide1-bg.jpg');
-   background-size: cover;
-   background-position: center;
-   padding:175px 0;
-
-	.h-200{
-		height: 500px;
-	}
-	.h-20{
-		height: 230px;
-	}
-
-	.p-top{
-		padding-top: 140px;
-	}
-
-	.p-20{
-		padding: 20px 20px;
-	}
-
-  .featured-article {
-      position: relative;
-      text-align: center;
-      color: white;
-    }
-    .featured-article img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-    .featured-article .overlay {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: rgba(255, 255, 255, 0.9);
-      padding: 20px;
-      border-radius: 10px;
-      color: #333;
-    }
-    .badge {
-      position: absolute;
-      top: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #FF6600;
-      color: white;
-      padding: 5px 10px;
-      font-size: 0.9rem;
-    }
-}
 
 //CSS SUB JUMBO
 .sub-jumbo{
@@ -353,6 +314,10 @@ export default {
 		position: relative;
 		top: -60px;
 	}
+
+  .card {
+      border: none; /* Remove borders from cards */
+    }
 }
 //RECEPIS
 .recipes{
