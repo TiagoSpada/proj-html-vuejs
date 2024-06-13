@@ -16,12 +16,26 @@ export default {
 		@mouseenter="MouseHover = true"
 		@mouseleave="MouseHover = false"
 	>
-		<div class="text-image" v-show="MouseHover">
-			<a href="">{{ recipe.text }}</a>
-		</div>
+		<Transition name="hover">
+			<div class="text-image" v-show="MouseHover">
+				<a href="">{{ recipe.text }}</a>
+			</div>
+		</Transition>
 	</div>
 </template>
 <style scoped lang="scss">
+.hover-move,
+.hover-enter-active,
+.hover-leave-active {
+	transition: 0.4s ease-in-out;
+}
+
+.hover-enter-from,
+.hover-leave-to {
+	opacity: 0;
+	transform: rotate(15deg);
+}
+
 .content {
 	height: 310px;
 	background-size: cover;
