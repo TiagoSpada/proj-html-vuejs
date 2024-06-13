@@ -4,6 +4,7 @@ import JumboComponent from "../components/home_components/JumboComponent.vue";
 import SubJumboComponent from "../components/home_components/SubJumboComponent.vue";
 import RecepisComponent from "../components/home_components/RecipeComponent.vue";
 import CollectionComponent from "../components/home_components/CollectionComponent.vue";
+import SubscribeComponent from "../components/home_components/SubscribeComponent.vue";
 
 export default {
 	name: "home",
@@ -13,6 +14,7 @@ export default {
 		SubJumboComponent,
 		RecepisComponent,
 		CollectionComponent,
+		SubscribeComponent,
 	},
 };
 </script>
@@ -22,8 +24,6 @@ export default {
 	<SubJumboComponent />
 	<RecepisComponent />
 	<CollectionComponent />
-
-
 	<!-- FARM SECTION -->
 	<div class="farm">
 		<div class="container-xl content-wrapper">
@@ -271,27 +271,9 @@ export default {
 				</div>
 			</div>
 		</div>
+		<SubscribeComponent />
 	</div>
-
-	//SUBSRIBE
-	<div class="subscribe p-60">
-		<div class="container-xl">
-			<h2>Subscribe & Receive A Free eBook</h2>
-			<p>
-				Aliquam erat volutpat. Ut quis ligula a magna blandit finibus.
-				Suspendisse maximus lacus non nunc lacinia lobortis.
-			</p>
-			<form class="form-inline justify-content-center d-flex">
-				<input
-					type="email"
-					class="form-control mb-2 mr-sm-2 w-35"
-					placeholder="Insert your email"
-				/>
-				<button type="submit" class="btn btn-warning ms-3">SUBSCRIBE</button>
-			</form>
-			<p>Cras porttitor pellentesque sem eu pretium.</p>
-		</div>
-	</div>
+	
 </template>
 
 <style scoped lang="scss">
@@ -355,32 +337,6 @@ export default {
 		height: 50px;
 		object-fit: cover;
 		margin-right: 10px;
-	}
-}
-
-//SUBSCRBE
-.subscribe {
-	background: url("https://avada.website/food/wp-content/uploads/sites/118/2019/03/subscribe-sec-bg.png")
-		no-repeat center center;
-	background-size: cover;
-	padding: 210px 0;
-	text-align: center;
-	color: #333;
-
-	.subscribe-section .form-control {
-		display: inline-block;
-		width: auto;
-		vertical-align: middle;
-		border-radius: 0;
-	}
-	.subscribe-section .btn {
-		vertical-align: middle;
-		border-radius: 0;
-		padding: 10px 20px;
-	}
-
-	.w-35 {
-		width: 35%;
 	}
 }
 </style>

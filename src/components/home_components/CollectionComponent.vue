@@ -97,5 +97,7 @@ export default {
 		padding-right: 410px;
 		padding-left: 410px;
 	}
+
+	
 }
 </style>
