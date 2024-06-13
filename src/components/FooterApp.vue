@@ -76,9 +76,31 @@ export default {
 						<div class="content contact">
 							<h4>CONTACT US</h4>
 							<ul class="ps-0">
-								<li><div>12345 Avada Main Street, New York, NY 555555</div></li>
-								<li><div>&plus;0100-505-0000</div></li>
-								<li><div>info@avada-domain.com</div></li>
+								<li>
+									<span
+										><font-awesome-icon
+											:icon="['fas', 'location-dot']"
+											class="icon"
+									/></span>
+									12345 Avada Main Street, New York, NY 555555
+									<div></div>
+								</li>
+								<li>
+									<div>
+										<font-awesome-icon
+											:icon="['fas', 'phone-flip']"
+											class="icon"
+										/>
+									</div>
+									&plus;0100-505-0000
+									<div></div>
+								</li>
+								<li>
+									<div class="icon">
+										<font-awesome-icon :icon="['fas', 'envelope']" />
+									</div>
+									<div>info@avada-domain.com</div>
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -160,10 +182,13 @@ export default {
 		}
 		.contact {
 			li {
-				div {
-					font-size: 17px;
-					padding: 16px 0;
-					border-bottom: 1px solid #f5f5f1;
+				display: flex;
+				padding: 16px 0;
+				border-bottom: 1px solid #f5f5f1;
+				font-size: 17px;
+				.icon {
+					color: #fc7523;
+					margin-right: 20px;
 				}
 			}
 		}

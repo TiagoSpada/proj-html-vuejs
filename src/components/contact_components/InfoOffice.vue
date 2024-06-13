@@ -11,8 +11,11 @@ export default {
 					<div class="content-info">
 						<div class="row">
 							<div class="col-3">
-								<div class="icon">
-									<!-- <font-awesome-icon icon="location-dot" /> -->
+								<div class="icon-container">
+									<font-awesome-icon
+										:icon="['fas', 'location-dot']"
+										class="m-auto"
+									/>
 								</div>
 							</div>
 							<div class="col-7">
@@ -26,8 +29,11 @@ export default {
 					<div class="content-info">
 						<div class="row">
 							<div class="col-3">
-								<div class="icon">
-									<font-awesome-icon icon="fa-solid fa-phone-flip" />
+								<div class="icon-container">
+									<font-awesome-icon
+										:icon="['fas', 'phone-flip']"
+										class="m-auto"
+									/>
 								</div>
 							</div>
 							<div class="col-7">
@@ -41,8 +47,8 @@ export default {
 					<div class="content-info">
 						<div class="row">
 							<div class="col-3">
-								<div class="icon">
-									<font-awesome-icon :icon="['fas', 'clock']" />
+								<div class="icon-container">
+									<font-awesome-icon :icon="['fas', 'clock']" class="m-auto" />
 								</div>
 							</div>
 							<div class="col-7">
@@ -75,16 +81,27 @@ export default {
 				margin-top: 20px;
 				.content-info {
 					padding: 35px 20px;
-					.icon {
+					.icon-container {
 						height: 74px;
 						width: 74px;
-						border: 1px solid black;
+						display: flex;
+						font-size: 35px;
+						color: #fc7523;
+						border: 2px solid #fc7523;
 						border-radius: 50%;
 					}
-					h5 {
-						font-size: 18px;
-						letter-spacing: 2px;
-						margin-bottom: 15px;
+					.col-7 {
+						margin-bottom: 20px;
+						h5 {
+							font-size: 18px;
+							letter-spacing: 2px;
+							margin-bottom: 15px;
+							font-weight: 600;
+						}
+						div {
+							color: #858695;
+							font-size: 17px;
+						}
 					}
 				}
 			}
