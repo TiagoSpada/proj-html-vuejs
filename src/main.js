@@ -15,9 +15,10 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 /* import specific icons */
 import { faPhoneFlip } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
-library.add([faPhoneFlip, faClock]);
+library.add([faPhoneFlip, faClock, faEnvelope]);
 
 createApp(App)
 	.use(router)
