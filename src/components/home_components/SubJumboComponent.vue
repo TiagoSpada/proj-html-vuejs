@@ -7,7 +7,7 @@ export default {
 <template>
  <!-- SUB JUMBOTRON-->
  <div class="sub-jumbo">
-	<div class="container-xl text-center  sub-jumbo-pos bg-body pb-3">
+	<div class="container-xl text-center  sub-jumbo-pos bg-body pb-3 ps-3 pe-3">
 		<h5 class="p-4 gray">FOODIE JOURNAL</h5>
     <div class="row">
     <div class="col-md-4 article-card">

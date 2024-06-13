@@ -2,13 +2,15 @@
 import FooterApp from "../components/FooterApp.vue";
 import JumboComponent from "../components/home_components/JumboComponent.vue";
 import SubJumboComponent from "../components/home_components/SubJumboComponent.vue";
+import RecepisComponent from "../components/home_components/RecepisComponent.vue";
 
 export default {
 	name: "home",
 	components: {
 		FooterApp,
     JumboComponent,
-    SubJumboComponent
+    SubJumboComponent,
+    RecepisComponent
 	},
 };
 </script>
@@ -18,47 +20,7 @@ export default {
 
  <JumboComponent/>
  <SubJumboComponent/>
-<!-- RECIPES -->
-<div class="recipes">
-	<div class="container-xl mt-4 pb-4">
-    <div class="row">
-      <div class="col-8">
-        <div class="card recepis-card">
-          <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/Yogurt-Nan.jpg" class="card-img-top recipes-main-image" alt="Immagine Main">
-          <div class="card-body">
-            <h5 class="card-title">Lunch Favourite with Salad, Naan And Beans</h5>
-            <p class="card-text text-muted">Bakery, Featured, Healthy, Latest Recipes, Staff Picks</p>
-            <hr>
-            <p class="card-text">Suspendisse at semper odio. Nam fringilla scelerisque tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec tincidunt posuere ornare. Phasellus placerat odio non feugiat sollicitudin. Integer vitae elementum ex. Sed porttitor, diam eget convallis volutpat, arcu</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-4">
-        <div class="row h-100">
-          <div class="col-6 mb-3">
-            <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/Mixed-fruits.jpg" class="recipes-secondary-image" alt="Ricetta 1">
-          </div>
-          <div class="col-6 mb-3">
-            <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/Mixed-fruits.jpg" class="recipes-secondary-image" alt="Ricetta 2">
-          </div>
-          <div class="col-6 mb-3">
-            <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/Mixed-fruits.jpg" class="recipes-secondary-image" alt="Ricetta 3">
-          </div>
-          <div class="col-6 mb-3">
-            <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/Mixed-fruits.jpg" class="recipes-secondary-image" alt="Ricetta 4">
-          </div>
-          <div class="col-6">
-            <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/Mixed-fruits.jpg" class="recipes-secondary-image" alt="Ricetta 5">
-          </div>
-          <div class="col-6">
-            <img src="https://avada.website/food/wp-content/uploads/sites/118/2019/03/Mixed-fruits.jpg" class="recipes-secondary-image" alt="Ricetta 6">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+ <RecepisComponent/>
 
 <!-- COLLECTION -->
 <div class="collection">
@@ -263,26 +225,6 @@ export default {
 </template>
 
 <style scoped lang="scss">
-
-
-
-//RECEPIS
-.recipes{
-
-    .recipes-main-image {
-      width: 100%;
-      height: auto;
-    }
-    .recipes-secondary-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .recepis-card {
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border: none;
-    }
-}
 
 //COLLECTION
 .collection{
