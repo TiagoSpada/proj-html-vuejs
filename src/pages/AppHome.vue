@@ -260,7 +260,18 @@ export default {
   </div>
 </div>
 
-
+//SUBSRIBE 
+<div class="subscribe p-60">
+  <div class="container-xl">
+    <h2>Subscribe & Receive A Free eBook</h2>
+    <p>Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lacinia lobortis.</p>
+    <form class="form-inline justify-content-center d-flex">
+      <input type="email" class="form-control mb-2 mr-sm-2 w-35" placeholder="Insert your email">
+      <button type="submit" class="btn btn-warning ms-3">SUBSCRIBE</button>
+    </form>
+    <p>Cras porttitor pellentesque sem eu pretium.</p>
+  </div>
+</div>
 
 </template>
 
@@ -391,4 +402,29 @@ export default {
     }
 }
 
+//SUBSCRBE
+.subscribe{
+      background: url('https://avada.website/food/wp-content/uploads/sites/118/2019/03/subscribe-sec-bg.png') no-repeat center center;
+      background-size: cover;
+      padding:210px 0;
+      text-align: center;
+      color: #333;
+    
+      .subscribe-section .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+        border-radius: 0;
+      }
+      .subscribe-section .btn {
+        vertical-align: middle;
+        border-radius: 0;
+        padding: 10px 20px;
+      }
+
+      .w-35{
+        width: 35%;
+      }
+
+  }
 </style>
