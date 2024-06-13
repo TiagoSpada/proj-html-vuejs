@@ -53,18 +53,20 @@ export default {
 			color: white;
 			margin: auto;
 			h2 {
+				font-family: "Vidaloka";
 				font-size: 42px;
 				line-height: 1.4;
 			}
 			p {
 				font-size: 16px;
+				color: #e4d5ce;
 			}
 		}
 	}
 }
 
 .contact {
-	padding-bottom: 150px;
+	padding-bottom: 75px;
 	.container-lg {
 		max-width: 1248px;
 	}

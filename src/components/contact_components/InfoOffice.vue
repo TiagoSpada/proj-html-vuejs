@@ -6,7 +6,7 @@ export default {
 <template>
 	<div class="col-12 col-lg-6 contact-info">
 		<div class="content">
-			<div class="row flex-column justify-content-between">
+			<div class="row flex-column">
 				<div class="col info">
 					<div class="content-info">
 						<div class="row">
@@ -65,29 +65,32 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use "../../assets/scss/partials/variables" as *;
+
 .contact-info {
 	position: relative;
 	top: -75px;
-	padding: 0 20px;
+	padding: 0 30px;
 	.content {
 		background-image: url("https://avada.website/food/wp-content/uploads/sites/118/2019/03/brooke-lark-186926-unsplash-1.jpg");
 		background-size: cover;
 		background-position: center;
-		height: 800px;
 		padding: 80px 60px;
 		.row {
 			.info {
 				background-color: #fff;
 				margin-top: 20px;
+				margin-bottom: 35px;
 				.content-info {
 					padding: 35px 20px;
+
 					.icon-container {
 						height: 74px;
 						width: 74px;
 						display: flex;
 						font-size: 35px;
-						color: #fc7523;
-						border: 2px solid #fc7523;
+						color: $main-orange;
+						border: 2px solid $main-orange;
 						border-radius: 50%;
 					}
 					.col-7 {
@@ -96,7 +99,6 @@ export default {
 							font-size: 18px;
 							letter-spacing: 2px;
 							margin-bottom: 15px;
-							font-weight: 600;
 						}
 						div {
 							color: #858695;
