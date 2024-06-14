@@ -50,7 +50,7 @@ export default {
 								nascetur ridiculus mus. Donec tincidunt posuere ornare.
 								Phasellus placerat odio non feugiat sollicitudin.
 							</p>
-							<a href="#" class="btn btn-primary">Read more</a>
+							<a href="#" class="btn-r btn-primary">Read more</a>
 						</div>
 					</div>
 					<div class="row">
@@ -65,7 +65,8 @@ export default {
 									<h5 class="card-title">
 										Fruit Platter with Banana, Mango, Berries and Orange
 									</h5>
-									<p class="card-text">admin | March 18th, 2019</p>
+									<small class="text-center">admin |</small>
+									<small class="card-text gray"> March 18th, 2019</small>
 								</div>
 							</div>
 						</div>
@@ -80,7 +81,8 @@ export default {
 									<h5 class="card-title">
 										Breakfast Delight with Strawberry, Egg and Fruit
 									</h5>
-									<p class="card-text">admin | March 18th, 2019</p>
+									<small class="text-center">admin |</small>
+									<small class="card-text gray"> March 18th, 2019</small>
 								</div>
 							</div>
 						</div>
@@ -95,7 +97,8 @@ export default {
 									<h5 class="card-title">
 										Ice Cream Heaven with Vanilla, Chocolate and Pistachio
 									</h5>
-									<p class="card-text">admin | March 18th, 2019</p>
+									<small class="text-center">admin |</small>
+									<small class="card-text gray"> March 18th, 2019</small>
 								</div>
 							</div>
 						</div>
@@ -110,7 +113,8 @@ export default {
 									<h5 class="card-title">
 										Video Recipe: How to Make a Cool Summer Drink
 									</h5>
-									<p class="card-text">Dario Pineda | March 18th, 2019</p>
+									<small class="text-center">Dario Pineda | </small>
+									<small class="card-text gray">March 18th, 2019</small>
 								</div>
 							</div>
 						</div>
@@ -123,7 +127,8 @@ export default {
 								/>
 								<div class="card-body">
 									<h5 class="card-title">Ketogenic Diet Recipe with Avocado</h5>
-									<p class="card-text">admin | March 18th, 2019</p>
+									<small class="text-center">admin | </small>
+									<small class="card-text gray">March 18th, 2019</small>
 								</div>
 							</div>
 						</div>
@@ -138,7 +143,8 @@ export default {
 									<h5 class="card-title">
 										Video Recipe: The Perfect Cosmopolitan
 									</h5>
-									<p class="card-text">Dario Pineda | March 18th, 2019</p>
+									<small class="text-center">Dario Pineda | </small>
+									<small class="card-text gray">March 18th, 2019</small>
 								</div>
 							</div>
 						</div>
@@ -337,6 +343,26 @@ export default {
 		height: 50px;
 		object-fit: cover;
 		margin-right: 10px;
+	}
+
+	.btn {
+		background-color: #ff6600;
+		border: none;
+		padding: 3px 25px;
+		color:  white;
+	}
+
+	.btn-r{
+		color: black;
+		border-bottom: 1px solid #333;
+	}
+
+	.card-title{
+		font-family: Vidaloka;
+	}
+
+	.gray{
+		color: #67615A;
 	}
 }
 </style>
