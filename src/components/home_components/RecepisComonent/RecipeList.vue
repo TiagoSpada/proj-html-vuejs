@@ -1,6 +1,6 @@
 <script>
 export default {
-	name: "RecipeElement",
+	name: "RecipeList",
 	props: ["recipe"],
 	data() {
 		return {
@@ -10,24 +10,26 @@ export default {
 };
 </script>
 <template>
-	<div
-		class="content"
-		:style="{ backgroundImage: 'url(' + recipe.ImgUrl + ')' }"
-		@mouseenter="MouseHover = true"
-		@mouseleave="MouseHover = false"
-	>
-		<Transition name="hover">
-			<div class="text-image" v-show="MouseHover">
-				<a href="">{{ recipe.text }}</a>
-			</div>
-		</Transition>
+	<div class="col-6 mb-3">
+		<div
+			class="content h-100"
+			:style="{ backgroundImage: 'url(' + recipe.ImgUrl + ')' }"
+			@mouseenter="MouseHover = true"
+			@mouseleave="MouseHover = false"
+		>
+			<Transition name="hover">
+				<div class="text-image" v-show="MouseHover">
+					<a href="">{{ recipe.text }}</a>
+				</div>
+			</Transition>
+		</div>
 	</div>
 </template>
 <style scoped lang="scss">
 .hover-move,
 .hover-enter-active,
 .hover-leave-active {
-	transition: 0.4s ease-in-out;
+	transition: 0.4s ease;
 }
 
 .hover-enter-from,
@@ -37,7 +39,6 @@ export default {
 }
 
 .content {
-	height: 310px;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

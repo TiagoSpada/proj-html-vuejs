@@ -61,6 +61,7 @@ export default {
 
 .contact-input {
 	padding-left: 45px;
+	padding-right: 20px;
 	.content {
 		// background-color: lightskyblue;
 		padding-top: 60px;
@@ -70,7 +71,7 @@ export default {
 		p {
 			font-size: 17px;
 			color: #67615a;
-			line-height: 1.6;
+			line-height: 1.9;
 			margin-bottom: 35px;
 		}
 		label {
@@ -88,6 +89,7 @@ export default {
 		textarea {
 			font-size: 17px;
 			padding: 15px 10px;
+			border: 2px solid rgb(230, 226, 226);
 			border-radius: 5px;
 			color: #a7a098;
 		}
@@ -95,8 +97,9 @@ export default {
 		input:hover,
 		textarea:focus,
 		textarea:hover {
-			border: 2px solid $main-orange;
+			border-color: $main-orange;
 			box-shadow: none;
+			transition: 700ms;
 		}
 		button {
 			color: #fff;
@@ -110,6 +113,7 @@ export default {
 		}
 		button:hover {
 			background-color: #e65d09;
+			transition: 700ms;
 		}
 		small {
 			display: block;

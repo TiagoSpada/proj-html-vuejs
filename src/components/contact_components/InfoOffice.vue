@@ -93,6 +93,10 @@ export default {
 						border: 2px solid $main-orange;
 						border-radius: 50%;
 					}
+					.icon-container:hover {
+						background-color: #333338;
+						transition: 600ms;
+					}
 					.col-7 {
 						margin-bottom: 20px;
 						h5 {
@@ -111,7 +115,7 @@ export default {
 				margin-top: 0;
 			}
 			.info:last-child {
-				padding: 10px;
+				padding: 25px;
 				background-color: #fff;
 			}
 		}

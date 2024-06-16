@@ -114,6 +114,7 @@ export default {
 							cursor: pointer;
 							color: $main-orange;
 							border-right: 2px solid $main-orange;
+							transition: 100ms;
 						}
 					}
 				}
