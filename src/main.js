@@ -29,6 +29,9 @@ import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
+import { faUtensils } from "@fortawesome/free-solid-svg-icons";
+import { faFileLines } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
 library.add([
@@ -42,6 +45,9 @@ library.add([
 	faYoutube,
 	faMagnifyingGlass,
 	faXmark,
+	faSquareCheck,
+	faUtensils,
+	faFileLines,
 ]);
 
 createApp(App)

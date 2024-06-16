@@ -9,7 +9,10 @@ export default{
         return{
             isActive: false,
             bool: false,
-            avad: `https://themeforest.net/item/avada-responsive-multipurpose-theme/2833226?irgwc=1&clickid=QhvVUE01ixyKWyNxtHx-hTEWUkHX8fSecQv22c0&iradid=275988&irpid=1292887&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1292887&utm_medium=affiliate&utm_source=impact_radius`
+            avad: `https://themeforest.net/item/avada-responsive-multipurpose-theme/2833226?irgwc=1&clickid=QhvVUE01ixyKWyNxtHx-hTEWUkHX8fSecQv22c0&iradid=275988&irpid=1292887&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1292887&utm_medium=affiliate&utm_source=impact_radius`,
+            recipes:`https://avada.website/food/all-recipes/`,
+            places: `https://avada.website/food/places/`,
+            blog: `https://avada.website/food/blog/`,
             
         }
     },
@@ -39,20 +42,20 @@ export default{
                 </div>
                 <!-- menu -->
                 <div class="justify-content-center text-center col-12 col-md-7 ">
-                    <img class="w-35" src="https://avada.website/food/wp-content/uploads/sites/118/2021/04/avada-food-logo.svg" alt="avada-foo">
+                    <img class="w-25" src="https://avada.website/food/wp-content/uploads/sites/118/2021/04/avada-food-logo.svg" alt="avada-foo">
         
                     <ul class="nav mb-md-0 py-4 relazione">
                         <li class="px-4 index">
                             <router-link :to="{ name: 'home' }"><strong  :class="{ select: activeMenu === 'Home' }" @click="setActiveMenu('Home')">Home</strong></router-link>
                         </li>
                         <li class="px-4 index">
-                            <a href="" ><strong  :class="{ select: activeMenu === 'Recipes' }" @click="setActiveMenu('Recipes')">Recipes</strong></a>
+                            <a :href="recipes" ><strong  :class="{ select: activeMenu === 'Recipes' }" @click="setActiveMenu('Recipes')">Recipes</strong></a>
                         </li>
                         <li class="px-4 index">
-                            <a href=""><strong  :class="{ select: activeMenu === 'Places' }" @click="setActiveMenu('Places')">Places</strong></a>
+                            <a :href="places"><strong  :class="{ select: activeMenu === 'Places' }" @click="setActiveMenu('Places')">Places</strong></a>
                         </li>
                         <li class="px-4 index">
-                            <a href=""><strong  :class="{ select: activeMenu === 'blog' }" @click="setActiveMenu('blog')">Blog</strong></a>
+                            <a :href="blog"><strong  :class="{ select: activeMenu === 'blog' }" @click="setActiveMenu('blog')">Blog</strong></a>
                         </li>
                         <li class="px-4 index">
                             <router-link :to="{ name: 'about' }"><strong  :class="{ select: activeMenu === 'About' }" @click="setActiveMenu('About')">About</strong></router-link>
@@ -72,16 +75,12 @@ export default{
                                         <font-awesome-icon icon="xmark" />
                                     </div>
                                 </div>
-
-                            
                         </li>
                     </ul>
-                    
-
-
                 </div>
                 <!-- icons -->
                  <icon />
+                 
 
             </div>
         </header>
@@ -104,10 +103,6 @@ header {
                 &:hover {
                     color: $a-fc;
                 }
-            }
-
-            .w-35 {
-                width: 35%;
             }
 
             .relazione {
@@ -174,7 +169,7 @@ header {
         display: flex;
         justify-content: center;
         cursor: pointer;
-        color: #33475b;
+        color: $header-text;
         
         font-size: 1.2rem;
         height: 56.5px;
@@ -187,7 +182,7 @@ header {
         display: flex;
         justify-content: center;
         cursor: pointer;
-        color: #33475b;
+        color: $header-text;
 
         
         height: 60px;

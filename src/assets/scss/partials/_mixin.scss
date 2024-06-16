@@ -1,3 +1,10 @@
 /******
 MIXIN
 ******/
+@mixin riga($size){
+    content: '';
+        width: $size;
+        height: 2px;
+        background-color: currentColor;
+        display: block;
+}

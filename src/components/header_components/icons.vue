@@ -1,58 +1,67 @@
 <script>
 export default{
     name: `icon`,
+     data() {
+        return{
+    
+            facebook:`https://www.facebook.com/ThemeFusionAvada`,
+            instagram: `https://www.instagram.com/themefusion/`,
+            twitter:`https://x.com/theme_fusion?mx=2`,
+            youtube:`https://www.youtube.com/@AvadaVideos`,
+        }
+    },
 }
 </script>
 <template>
-     <!-- icons -->
-                    <div class="col-md-2 text-end">
-                        <ul class="example-2">
-                            <li class="icon-content">
-                                <a
-                                href="https://www.facebook.com/ThemeFusionAvada"
-                                aria-label="facebook"
-                                data-social="facebook"
-                                >
-                                <div class="filled"></div>
-                                <font-awesome-icon icon="fa-brands fa-facebook-f" />
-                                </a>
-                                <div class="tooltip">Facebook</div>
-                            </li>
-                            <li class="icon-content">
-                                <a
-                                href="https://www.instagram.com/themefusion/"
-                                aria-label="instagram"
-                                data-social="instagram"
-                                >
-                                <div class="filled"></div>
-                                <font-awesome-icon icon="fa-brands fa-instagram" />
-                                </a>
-                                <div class="tooltip">Instagram</div>
-                            </li>
-                            <li class="icon-content">
-                                <a
-                                href="https://x.com/theme_fusion?mx=2"
-                                aria-label="twitter"
-                                data-social="twitter"
-                                >
-                                <div class="filled"></div>
-                                <font-awesome-icon icon="fa-brands fa-x-twitter" />
-                                </a>
-                                <div class="tooltip">X</div>
-                            </li>
-                            <li class="icon-content">
-                                <a
-                                href="https://www.youtube.com/@AvadaVideos"
-                                aria-label="youtube"
-                                data-social="youtube"
-                                >
-                                <div class="filled"></div>
-                                <font-awesome-icon icon="fa-brands fa-youtube" />
-                                </a>
-                                <div class="tooltip">YouTube</div>
-                            </li>
-                        </ul>
-                    </div>
+  <!-- icons -->
+        <div class="col-md-2 text-end">
+            <ul class="example-2">
+                <li class="icon-content">
+                    <a
+                      :href="facebook"
+                      aria-label="facebook"
+                      data-social="facebook"
+                    >
+                    <div class="filled"></div>
+                    <font-awesome-icon icon="fa-brands fa-facebook-f" />
+                    </a>
+                    <div class="tooltip">Facebook</div>
+                </li>
+                <li class="icon-content">
+                    <a
+                        :href="instagram"
+                        aria-label="instagram"
+                        data-social="instagram"
+                    >
+                    <div class="filled"></div>
+                    <font-awesome-icon icon="fa-brands fa-instagram" />
+                    </a>
+                    <div class="tooltip">Instagram</div>
+                </li>
+                <li class="icon-content">
+                    <a
+                      :href="twitter"
+                      aria-label="twitter"
+                      data-social="twitter"
+                    >
+                    <div class="filled"></div>
+                    <font-awesome-icon icon="fa-brands fa-x-twitter" />
+                    </a>
+                    <div class="tooltip">X</div>
+                </li>
+                <li class="icon-content">
+                    <a
+                      :href="youtube"
+                      aria-label="youtube"
+                      data-social="youtube"
+                    >
+                    <div class="filled"></div>
+                    <font-awesome-icon icon="fa-brands fa-youtube" />
+                    </a>
+                    <div class="tooltip">YouTube</div>
+                </li>
+            </ul>
+        </div>
 </template>
 <style scoped lang="scss">
 /********** 
